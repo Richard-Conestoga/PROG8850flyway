@@ -1,0 +1,135 @@
+2025-11-06 17:35:44 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 17:35:44 - NYC311_ETL - INFO - NYC 311 ETL Pipeline Started
+2025-11-06 17:35:44 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 17:35:44 - NYC311_ETL - INFO - Starting data extraction from NYC 311 API...
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Successfully extracted 50000 rows and 41 columns
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Columns: unique_key, created_date, closed_date, agency, agency_name, complaint_type, descriptor, location_type, incident_zip, incident_address, street_name, cross_street_1, cross_street_2, intersection_street_1, intersection_street_2, address_type, city, landmark, facility_type, status, due_date, resolution_description, resolution_action_updated_date, community_board, bbl, borough, x_coordinate_state_plane, y_coordinate_state_plane, open_data_channel_type, park_facility_name, park_borough, vehicle_type, taxi_company_borough, taxi_pick_up_location, bridge_highway_name, bridge_highway_direction, road_ramp, bridge_highway_segment, latitude, longitude, location
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Starting data transformation...
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Initial null values: 581182
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Converted created_date to datetime
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Converted closed_date to datetime
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Converted due_date to datetime
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Converted resolution_action_updated_date to datetime
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Final null values: 581182
+2025-11-06 17:37:54 - NYC311_ETL - INFO - Transformation complete. Final shape: (50000, 42)
+2025-11-06 17:37:54 - NYC311_ETL - ERROR - Error connecting to MySQL: Authentication plugin 'caching_sha2_password' is not supported
+2025-11-06 17:37:54 - NYC311_ETL - ERROR - Failed to connect to database. Aborting pipeline.
+2025-11-06 18:03:17 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 18:03:17 - NYC311_ETL - INFO - NYC 311 ETL Pipeline Started
+2025-11-06 18:03:17 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 18:03:17 - NYC311_ETL - INFO - Starting data extraction from NYC 311 API...
+2025-11-06 18:08:17 - NYC311_ETL - ERROR - Failed to download data from API: HTTPSConnectionPool(host='data.cityofnewyork.us', port=443): Read timed out. (read timeout=300)
+2025-11-06 18:08:17 - NYC311_ETL - ERROR - Extraction failed or returned empty dataset. Aborting pipeline.
+2025-11-06 18:11:21 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 18:11:21 - NYC311_ETL - INFO - NYC 311 ETL Pipeline Started
+2025-11-06 18:11:21 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 18:11:21 - NYC311_ETL - INFO - Starting data extraction from NYC 311 API...
+2025-11-06 18:11:21 - NYC311_ETL - INFO - Attempt 1/3: Downloading data...
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Download complete. Total size: 31.5 MB
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Parsing CSV data...
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Successfully extracted 50000 rows and 41 columns
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Columns: unique_key, created_date, closed_date, agency, agency_name, complaint_type, descriptor, location_type, incident_zip, incident_address... (showing first 10)
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Starting data transformation...
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Initial null values: 17322
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Converted created_date to datetime
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Converted closed_date to datetime
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Final null values: 17322
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Transformation complete. Final shape: (50000, 9)
+2025-11-06 18:13:22 - NYC311_ETL - INFO - Null counts by column:
+unique_key            0
+created_date          0
+closed_date       15444
+agency                0
+complaint_type        0
+descriptor          840
+borough               0
+latitude            519
+longitude           519
+dtype: int64
+2025-11-06 18:13:22 - NYC311_ETL - ERROR - Error connecting to MySQL: Authentication plugin 'caching_sha2_password' is not supported
+2025-11-06 18:13:22 - NYC311_ETL - ERROR - Troubleshooting tips:
+2025-11-06 18:13:22 - NYC311_ETL - ERROR - 1. Verify MySQL credentials in CONFIG
+2025-11-06 18:13:22 - NYC311_ETL - ERROR - 2. Ensure MySQL server is running
+2025-11-06 18:13:22 - NYC311_ETL - ERROR - 3. Check if database exists
+2025-11-06 18:13:22 - NYC311_ETL - ERROR - 4. Verify user has proper permissions
+2025-11-06 18:13:22 - NYC311_ETL - ERROR - Failed to connect to database. Aborting pipeline.
+2025-11-06 18:28:25 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 18:28:25 - NYC311_ETL - INFO - NYC 311 ETL Pipeline Started
+2025-11-06 18:28:25 - NYC311_ETL - INFO - ================================================================================
+2025-11-06 18:28:25 - NYC311_ETL - INFO - Starting data extraction from NYC 311 API...
+2025-11-06 18:28:25 - NYC311_ETL - INFO - Attempt 1/3: Downloading data...
+2025-11-06 18:30:22 - NYC311_ETL - INFO - Downloaded: 15.0 MB
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Download complete. Total size: 31.5 MB
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Parsing CSV data...
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Successfully extracted 50000 rows and 41 columns
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Columns: unique_key, created_date, closed_date, agency, agency_name, complaint_type, descriptor, location_type, incident_zip, incident_address... (showing first 10)
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Starting data transformation...
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Initial null values: 17322
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Converted created_date to datetime
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Converted closed_date to datetime
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Final null values: 17322
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Transformation complete. Final shape: (50000, 9)
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Null counts by column:
+unique_key            0
+created_date          0
+closed_date       15444
+agency                0
+complaint_type        0
+descriptor          840
+borough               0
+latitude            519
+longitude           519
+dtype: int64
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Successfully connected to MySQL Server version 9.5.0
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Connected to database: nyc311
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Table service_requests exists and is ready for loading
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Table has 9 columns
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Starting chunked data load. Total rows: 50000, Chunk size: 10000
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Using query: INSERT IGNORE INTO service_requests (unique_key, created_date, closed_date, agency, complaint_type, descriptor, borough, latitude, longitude) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+2025-11-06 18:30:26 - NYC311_ETL - ERROR - Error inserting chunk 1: 1054 (42S22): Unknown column 'nan' in 'field list'
+2025-11-06 18:30:26 - NYC311_ETL - ERROR - First row of failed chunk: (66726585, Timestamp('2025-11-05 03:58:58'), NaT, 'DOT', 'Street Condition', 'Pothole', 'QUEENS', nan, nan)
+2025-11-06 18:30:26 - NYC311_ETL - ERROR - Failed to load data. Pipeline completed with errors.
+2025-11-06 18:30:26 - NYC311_ETL - INFO - Database connection closed
+2025-11-07 01:52:48 - NYC311_ETL - INFO - ================================================================================
+2025-11-07 01:52:48 - NYC311_ETL - INFO - NYC 311 ETL Pipeline Started
+2025-11-07 01:52:48 - NYC311_ETL - INFO - ================================================================================
+2025-11-07 01:52:48 - NYC311_ETL - INFO - Starting data extraction from NYC 311 API...
+2025-11-07 01:52:48 - NYC311_ETL - INFO - Attempt 1/3: Downloading data...
+2025-11-07 01:56:31 - NYC311_ETL - INFO - Downloaded: 10.0 MB
+2025-11-07 01:56:32 - NYC311_ETL - INFO - Download complete. Total size: 31.5 MB
+2025-11-07 01:56:32 - NYC311_ETL - INFO - Parsing CSV data...
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Successfully extracted 50000 rows and 41 columns
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Columns: unique_key, created_date, closed_date, agency, agency_name, complaint_type, descriptor, location_type, incident_zip, incident_address... (showing first 10)
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Starting data transformation...
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Initial null values: 17322
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Converted created_date to datetime
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Converted closed_date to datetime
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Final null values: 17322
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Transformation complete. Final shape: (50000, 9)
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Null counts by column:
+unique_key            0
+created_date          0
+closed_date       15444
+agency                0
+complaint_type        0
+descriptor          840
+borough               0
+latitude            519
+longitude           519
+dtype: int64
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Successfully connected to MySQL Server version 9.5.0
+2025-11-07 01:56:33 - NYC311_ETL - INFO - Connected to database: nyc311
+2025-11-07 01:56:34 - NYC311_ETL - INFO - Table service_requests exists and is ready for loading
+2025-11-07 01:56:34 - NYC311_ETL - INFO - Table has 9 columns
+2025-11-07 01:56:34 - NYC311_ETL - INFO - Starting chunked data load. Total rows: 50000, Chunk size: 10000
+2025-11-07 01:56:34 - NYC311_ETL - INFO - Using query: INSERT IGNORE INTO service_requests (unique_key, created_date, closed_date, agency, complaint_type, descriptor, borough, latitude, longitude) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+2025-11-07 01:56:34 - NYC311_ETL - INFO - Chunk 1: Processed rows 1 to 10000 (10000 rows, 10000 inserted) in 0.93s (10749 rows/sec). Progress: 20.0%
+2025-11-07 01:56:35 - NYC311_ETL - INFO - Chunk 2: Processed rows 10001 to 20000 (10000 rows, 10000 inserted) in 0.75s (13286 rows/sec). Progress: 40.0%
+2025-11-07 01:56:36 - NYC311_ETL - INFO - Chunk 3: Processed rows 20001 to 30000 (10000 rows, 10000 inserted) in 0.68s (14600 rows/sec). Progress: 60.0%
+2025-11-07 01:56:37 - NYC311_ETL - INFO - Chunk 4: Processed rows 30001 to 40000 (10000 rows, 10000 inserted) in 0.67s (14835 rows/sec). Progress: 80.0%
+2025-11-07 01:56:37 - NYC311_ETL - INFO - Chunk 5: Processed rows 40001 to 50000 (10000 rows, 10000 inserted) in 0.82s (12175 rows/sec). Progress: 100.0%
+2025-11-07 01:56:37 - NYC311_ETL - INFO - Successfully loaded 50000 rows in 5 chunks
+2025-11-07 01:56:37 - NYC311_ETL - INFO - ================================================================================
+2025-11-07 01:56:37 - NYC311_ETL - INFO - ETL Pipeline Completed Successfully in 229.21 seconds
+2025-11-07 01:56:37 - NYC311_ETL - INFO - ================================================================================
+2025-11-07 01:56:37 - NYC311_ETL - INFO - Database connection closed
